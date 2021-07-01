@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Weather</title>
+    <style>
+        body {
+            background: url("images/bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #182C61;
+        }
+
+        img {
+            cursor: pointer;
+            margin-bottom: 16px;
+        }
+
+        #searchBtn {
+            background-color: #182C61;
+            color: white;
+            border: 1px solid #182C61;
+            border-radius: 0px;
+        }
+
+        input {
+            color: #182C61 !important;
+            width: 40% !important;
+        }
+
+
+        #searchText {
+            border: 1px solid #182C61;
+            border-radius: 0px;
+        }
+
+        #searchText:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+
+        #searchBtn:focus {
+            background-color: #5f76b6;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+
+        input::placeholder {
+            color: #182C61 !important;
+        }
+
+        main {
+            background-color: rgba(255, 255, 255, 0.5);
+            height: 100vh !important;
+            width: 100% !important;
+            margin-top: -16px !important;
+        }
+
+        .card {
+            margin: auto;
+        }
+
+        @media only screen and (max-width: 800px) {
+            h1 {
+                color: #182C61;
+                font-size: 26px;
+                margin-top: -15px;
+            }
+
+            .navbar-brand {
+                margin-left: 30px !important;
+            }
+
+            #toggleImg {
+                margin-right: 30px !important;
+            }
+
+            h4 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <nav class="navbar navbar-dark my-3">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/favicon.svg" alt="Weather" width="55">
+                    <h3 style="color:#182C61;display: inline;margin-left: 5px;">Weather</h3>
+                </a>
+                <img id="toggleImg" src="images/toggler-icon.svg" alt="Toggle">
+            </nav>
+        </div>
+        <div class="search-bar col-md-6 mx-auto">
+            <h1 class="text-center" style="color:#182C61">Search Weather By City</h1>
+            <div class="search-box my-4">
+                <form class="d-flex" style="justify-content: center;">
+                    <input id="searchText" class="form-control me-2" type="search" placeholder="Search"
+                        aria-label="Search" autocomplete="off">
+                    <button type="search" id="searchBtn" class="btn search-btn">Search</button>
+                </form>
+            </div>
+        </div>
+        <div id="podcast">
+
+        </div>
+    </main>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
