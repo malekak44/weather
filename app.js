@@ -17,7 +17,7 @@ function getWeather(e) {
         podcast.innerHTML = `<div class="card text-center" style="width: 21rem;">
             <ul class="list-group list-group-flush">
             <li class="list-group-item"><b>${city}</b></li>
-            <!--<li class="list-group-item"><i class="${data.weather[0].icon}"></i></li>-->
+            <li class="list-group-item"><img style="margin: -20px auto;" src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"></li>
             <li class="list-group-item">Weather: ${data.weather[0].main}</li>
             <li class="list-group-item">Temparature: ${(data.main.temp - 273.15).toFixed(2)}°C</li>
             <li class="list-group-item">Humidity: ${data.main.humidity}%</li>
